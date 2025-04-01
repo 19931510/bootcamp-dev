@@ -1,4 +1,4 @@
-package com.dev.repository;
+package com.dev.domain.repository;
 
 import com.dev.domain.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
+
+    boolean existsByAccountId (Long accountId);
 }
