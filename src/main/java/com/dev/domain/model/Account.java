@@ -13,16 +13,6 @@ public class Account {
     private long id;
 
     @Column(length = 20, nullable = false)
-    private String password;
-    public String getPassword() {
-        return password;}
-
-    @Column(length = 100, nullable = false)
-    private String email;
-    public String getEmail() {
-        return email;}
-
-    @Column(length = 20, nullable = false)
     private String firstName;
     public String getFirstName() {
         return firstName;
@@ -32,23 +22,6 @@ public class Account {
     private String lastName;
     public String getLastName() {
         return lastName;
-    }
-
-    @Column(length = 20, nullable = false)
-    private String address;
-    public String getAddress() {
-        return address;
-    }
-
-    @Column(length = 20, nullable = false)
-    private String city;
-    public String getCity() {
-        return city;
-    }
-    @Column(length = 20, nullable = false)
-    private String state;
-    public String getState() {
-        return state;
     }
 
     @OneToOne(cascade = CascadeType.ALL)
