@@ -1,5 +1,7 @@
 Projeto para o Bootcamp 2025 Avanade 
 
+A ideia dessa tela seria a conta de um usuario de app de prestadores de serviços.
+
 ## Diagrama de classes
 
 ```mermaid
@@ -17,7 +19,6 @@ classDiagram
         +string Id
         +string Serviços
         +string Name
-        +float Pontuação
     }
 
     class Feedback {
